@@ -1,0 +1,3 @@
+/home/jok3r/workspace/envMaven/projects/activity-tracker/activity-tracker-core/src/test/java/mg/jerryharim/activitytracker/core/TestRunner.java
+/home/jok3r/workspace/envMaven/projects/activity-tracker/activity-tracker-core/src/test/java/mg/jerryharim/activitytracker/core/stepdefs/EnregistrementActiviteStepDefs.java
+/home/jok3r/workspace/envMaven/projects/activity-tracker/activity-tracker-core/src/test/java/mg/jerryharim/activitytracker/core/fakeRepository/FakeRegistreActivite.java
