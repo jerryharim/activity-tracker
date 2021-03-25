@@ -19,9 +19,7 @@ public class EnregistrementActivite {
 	public void enregistrer(LocalDate date, LocalTime heureDebut, LocalTime heureFin, String nom, String motCle) {
 		List<String> listMotCle = new ArrayList<>();
 		listMotCle.add(motCle);
-
-		Activite activite = new Activite(date, heureDebut, heureFin, nom, listMotCle);
-		this.registreActivite.ajouter(activite);
+		enregistrer(date, heureDebut, heureFin, nom, listMotCle, null);
 	}
 
     public void enregistrer(LocalDate date, LocalTime heureDebut, LocalTime heureFin, String nom,

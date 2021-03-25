@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="0" name="mg.jerryharim.activitytracker.core.TestRunner" time="0.589" errors="0" skipped="0">
+<testsuite tests="2" failures="0" name="mg.jerryharim.activitytracker.core.TestRunner" time="0.55" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="15.0.2+7"/>
@@ -56,6 +56,6 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.endian" value="little"/>
   </properties>
-  <testcase classname="enregistrement d&apos;une activité" name="enregistrement basique d&apos;une activité" time="0.568"/>
-  <testcase classname="enregistrement d&apos;une activité" name="enregistremnt detaillé d&apos;une activité" time="0.021"/>
+  <testcase classname="enregistrement d&apos;une activité" name="enregistrement basique d&apos;une activité" time="0.535"/>
+  <testcase classname="enregistrement d&apos;une activité" name="enregistremnt detaillé d&apos;une activité" time="0.015"/>
 </testsuite>
