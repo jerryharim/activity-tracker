@@ -32,6 +32,12 @@ public class EnregistrementActivite {
 		this.registreActivite.ajouter(activite);
     }
 
+    public void enregistrer(LocalDate dateDebut, LocalDate dateFin, LocalTime heureDebut, LocalTime heureFin, String nom,
+            List<String> listMotCles) {
+		Activite activite = new Activite(dateDebut, dateFin, heureDebut, heureFin, nom, listMotCles);
+		this.registreActivite.ajouter(activite);
+    }
+
 }
 
 

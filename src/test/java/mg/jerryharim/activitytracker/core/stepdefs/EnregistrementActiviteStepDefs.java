@@ -22,20 +22,24 @@ import mg.jerryharim.activitytracker.core.utility.DateTimeUtility;
 
 
 public class EnregistrementActiviteStepDefs {
-    EnregistrementActivite enregistrementActivite;
-    private LocalDate date;
+
+    private EnregistrementActivite enregistrementActivite;
+    private LocalDate date, dateDebut, dateFin;
     private LocalTime heureDebut, heureFin;
     private String nom;
     private ListeActivite listeActivite;
     private List<String> motCles;
     private String detail;
     private Activite activiteEnregistrer;
+	private String nomActivite;
 
     @Before
     public void setup() {
+
         FakeRegistreActivite fakeRegistreActivite = new FakeRegistreActivite();
         this.enregistrementActivite = new EnregistrementActivite(fakeRegistreActivite);
         this.listeActivite = new ListeActivite(fakeRegistreActivite);
+
     }
 
 
@@ -68,7 +72,7 @@ public class EnregistrementActiviteStepDefs {
         this.activiteEnregistrer = this.listeActivite.recupererTout().get(0);
 
         activite.forEach(detailActivite -> {
-            then(activiteEnregistrer.getDate()).isEqualTo(this.date);
+            then(activiteEnregistrer.getDateDebut()).isEqualTo(this.date);
             then(activiteEnregistrer.getHeureDebut()).isEqualTo(this.heureDebut);
             then(activiteEnregistrer.getHeureFin()).isEqualTo(this.heureFin);
             then(activiteEnregistrer.getNom()).isEqualTo(this.nom);
@@ -109,6 +113,48 @@ public class EnregistrementActiviteStepDefs {
 
         then(this.activiteEnregistrer.getDetail())
             .isEqualTo(detailEsperer);
+
+    }
+
+    @Etantdonnéque("j'ai {string} le {string} à {string} jusqu'au {string} à {string}")
+    public void j_ai_le_a_jusqu_au_a(String nomActivite, String dateDebut, String heureDebut, String dateFin, String heureFin) {
+
+        this.nomActivite = nomActivite;
+        this.dateDebut = DateTimeUtility.toDayMonthYear(dateDebut);
+        this.dateFin = DateTimeUtility.toDayMonthYear(dateFin);
+        this.heureDebut = DateTimeUtility.toHourOfDay(heureDebut);
+        this.heureFin = DateTimeUtility.toHourOfDay(heureFin);
+
+    }
+
+    @Quand("je l'enregistre avec les mots cles {string}")
+    public void je_l_enregistre_avec_les_mots_cles(String motCles) {
+
+        this.motCles = split(motCles);
+        this.enregistrementActivite.enregistrer(
+            this.dateDebut, 
+            this.dateFin, 
+            this.heureDebut, 
+            this.heureFin, 
+            this.nomActivite, 
+            this.motCles
+        );
+
+    }
+
+    @Alors("l'activité qui suit devrait exister dans mes activités")
+    public void l_activite_qui_suit_devrait_exister_dans_mes_activites(List<Map<String, String>> activiteEsperer) {
+
+        this.activiteEnregistrer = this.listeActivite.recupererTout().get(0);
+
+        this.listeActivite.recupererTout().forEach(detailActivite -> {
+            then(activiteEnregistrer.getDateDebut()).isEqualTo(this.dateDebut);
+            then(activiteEnregistrer.getDateFin()).isEqualTo(this.dateFin);
+            then(activiteEnregistrer.getHeureDebut()).isEqualTo(this.heureDebut);
+            then(activiteEnregistrer.getHeureFin()).isEqualTo(this.heureFin);
+            then(activiteEnregistrer.getNom()).isEqualTo(this.nomActivite);
+            then(activiteEnregistrer.getMotCle()).containsAll(this.motCles);
+        });
 
     }
 
