@@ -10,8 +10,8 @@ public class FakeRegistreActivite implements RegistreActivite {
     private final List<Activite> activites = new ArrayList<>();
 
     @Override
-    public void ajouter(Activite activite) {
-        this.activites.add(activite);
+    public boolean ajouter(Activite activite) {
+        return this.activites.add(activite);
     }
 
     @Override

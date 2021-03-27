@@ -1,8 +1,0 @@
-mg/jerryharim/activitytracker/core/usecase/RegistreActivite.class
-mg/jerryharim/activitytracker/core/annotation/UseCase.class
-mg/jerryharim/activitytracker/core/usecase/EnregistrementActivite.class
-mg/jerryharim/activitytracker/core/usecase/ListeActivite.class
-mg/jerryharim/activitytracker/core/utility/DateTimeUtility.class
-mg/jerryharim/activitytracker/core/annotation/Repository.class
-mg/jerryharim/activitytracker/core/App.class
-mg/jerryharim/activitytracker/core/entity/Activite.class

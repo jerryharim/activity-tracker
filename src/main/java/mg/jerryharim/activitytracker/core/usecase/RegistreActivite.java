@@ -12,7 +12,7 @@ import mg.jerryharim.activitytracker.core.entity.Activite;
  @Repository
 public interface RegistreActivite {
 
-    void ajouter(Activite activite);
+    boolean ajouter(Activite activite);
 
     List<Activite> recupererTout();
 
