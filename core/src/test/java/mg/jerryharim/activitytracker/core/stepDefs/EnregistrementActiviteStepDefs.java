@@ -1,4 +1,4 @@
-package mg.jerryharim.activitytracker.core.stepdefs;
+package mg.jerryharim.activitytracker.core.stepDefs;
 
 import static org.assertj.core.api.BDDAssertions.then;
 
@@ -18,7 +18,6 @@ import mg.jerryharim.activitytracker.core.fakeRepository.FakeRegistreActivite;
 import mg.jerryharim.activitytracker.core.usecase.EnregistrementActivite;
 import mg.jerryharim.activitytracker.core.usecase.ListeActivite;
 import mg.jerryharim.activitytracker.core.utility.DateTimeUtility;
-
 
 
 public class EnregistrementActiviteStepDefs {

@@ -1,0 +1,12 @@
+.gradle/
+.idea/
+.vscode/
+.settings/
+.project
+cli/.classpath
+cli/deployements/
+cli/target/
+core/build
+repository/.classpath
+repository/target/
+cli/build/

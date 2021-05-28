@@ -1,0 +1,20 @@
+configurations {
+    cucumberRuntime {
+        extendsFrom testImplementation
+    }
+}
+
+task cucumber {
+    dependsOn assemble, testClasses
+    doLast {
+        javaexec {
+            main = "io.cucumber.core.cli.Main"
+            classpath = configurations.cucumberRuntime + sourceSets.main.output + sourceSets.test.output
+            args = [
+                    '--plugin', 'pretty',
+                    '--glue', 'mg.jerryharim.activitytracker.core.stepDefs',
+                    'src/test/resources/features/enregistrement_activite.feature'
+            ]
+        }
+    }
+}
