@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.String?>
+<?import java.net.URL?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
@@ -7,86 +9,36 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 
-
 <StackPane xmlns="http://javafx.com/javafx/8.0.201" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="660.0" spacing="12.0" style="-fx-background-color: #161616;">
          <children>
-            <HBox alignment="CENTER_LEFT" prefWidth="200.0" spacing="100.0">
+            <HBox alignment="CENTER_LEFT" prefWidth="200.0" styleClass="window-header-container">
                <children>
                   <HBox alignment="CENTER_LEFT">
                      <children>
-                        <Label minWidth="-Infinity" style="-fx-text-fill: #f5f5f5; -fx-font-weight: bold;" text="Activity" />
-                        <Label minWidth="-Infinity" style="-fx-text-fill: #14e4be; -fx-font-weight: bold;" text="Tracker" />
+                        <Label minWidth="-Infinity" styleClass="logo-first-block" text="Activity" />
+                        <Label minWidth="-Infinity" styleClass="logo-last-block" text="Tracker" />
                      </children>
                   </HBox>
-                  <HBox alignment="CENTER_RIGHT" prefWidth="200.0" spacing="40.0" HBox.hgrow="ALWAYS">
+                  <HBox alignment="CENTER_RIGHT" prefWidth="200.0" styleClass="window-header-right-container" HBox.hgrow="ALWAYS">
                      <children>
-                        <HBox spacing="20.0">
+                        <HBox styleClass="menu-container">
                            <children>
-                              <Button minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="71.0" style="-fx-background-color: linear-gradient(#0c8e72, #0b8652); -fx-text-fill: #f5f5f5; -fx-background-radius: 5;" text="Liste" />
-                              <Button mnemonicParsing="false" style="-fx-background-color: none; -fx-text-fill: #c5c5c5; -fx-font-size: 22px; -fx-font-weight: bold; -fx-padding: 0;" text="+" />
+                              <Button minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="71.0" styleClass="primary-button" text="Liste" />
+                              <Button mnemonicParsing="false" styleClass="transparent-button" text="+" />
                            </children>
                         </HBox>
-                        <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="15.0" prefWidth="15.0" style="-fx-background-color: #f92525; -fx-background-radius: 100; -fx-padding: 0;" />
+                        <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="15.0" prefWidth="15.0" styleClass="close-button" />
                      </children>
                   </HBox>
                </children>
-               <padding>
-                  <Insets left="10.0" right="10.0" />
-               </padding>
             </HBox>
-            <VBox prefHeight="244.0" prefWidth="640.0" spacing="12.0" style="-fx-background-color: #252525; -fx-background-radius: 10px;" VBox.vgrow="ALWAYS">
-               <children>
-                  <VBox prefWidth="624.0" style="-fx-background-color: #2c2c2c; -fx-background-radius: 10px; -fx-padding: 8 22 8 22;">
-                     <children>
-                        <Label style="-fx-text-fill: #8d8d8d;" text="Le 12/01/20 de 10:00 à 11:12" />
-                        <Label layoutX="10.0" layoutY="10.0" style="-fx-text-fill: #c5c5c5; -fx-font-weight: bold;" text="Lecture du livre cuisine facile" />
-                        <HBox spacing="8.0">
-                           <children>
-                              <Label style="-fx-text-fill: #8d8d8d; -fx-background-color: #3c3c3c; -fx-background-radius: 100; -fx-padding: 1 8 1 8;" text="Lecture" />
-                              <Label style="-fx-text-fill: #8d8d8d; -fx-background-color: #3c3c3c; -fx-background-radius: 100; -fx-padding: 1 8 1 8;" text="Passe temps" />
-                           </children>
-                           <VBox.margin>
-                              <Insets top="16.0" />
-                           </VBox.margin>
-                        </HBox>
-                     </children>
-                  </VBox>
-                  <VBox layoutX="18.0" layoutY="26.0" prefWidth="624.0" style="-fx-background-color: #2c2c2c; -fx-background-radius: 10px; -fx-padding: 8 22 8 22;">
-                     <children>
-                        <Label style="-fx-text-fill: #8d8d8d;" text="Le 12/01/20 de 10:00 à 11:12" />
-                        <Label layoutX="10.0" layoutY="10.0" style="-fx-text-fill: #c5c5c5; -fx-font-weight: bold;" text="Lecture du livre cuisine facile Lecture du livre cuisine facile Lecture du livre cuisine facile Lecture du livre cuisine facile Lecture du livre cuisine facile " wrapText="true" />
-                        <HBox spacing="8.0">
-                           <children>
-                              <Label style="-fx-text-fill: #8d8d8d; -fx-background-color: #3c3c3c; -fx-background-radius: 100; -fx-padding: 1 8 1 8;" text="Lecture" />
-                              <Label style="-fx-text-fill: #8d8d8d; -fx-background-color: #3c3c3c; -fx-background-radius: 100; -fx-padding: 1 8 1 8;" text="Passe temps" />
-                           </children>
-                           <VBox.margin>
-                              <Insets top="16.0" />
-                           </VBox.margin>
-                        </HBox>
-                     </children>
-                  </VBox>
-                  <VBox layoutX="18.0" layoutY="120.0" prefWidth="624.0" style="-fx-background-color: #2c2c2c; -fx-background-radius: 10px; -fx-padding: 8 22 8 22;">
-                     <children>
-                        <Label style="-fx-text-fill: #8d8d8d;" text="Le 12/01/20 de 10:00 à 11:12" />
-                        <Label layoutX="10.0" layoutY="10.0" style="-fx-text-fill: #c5c5c5; -fx-font-weight: bold;" text="Lecture du livre cuisine facile" />
-                        <HBox spacing="8.0">
-                           <children>
-                              <Label style="-fx-text-fill: #8d8d8d; -fx-background-color: #3c3c3c; -fx-background-radius: 100; -fx-padding: 1 8 1 8;" text="Lecture" />
-                              <Label style="-fx-text-fill: #8d8d8d; -fx-background-color: #3c3c3c; -fx-background-radius: 100; -fx-padding: 1 8 1 8;" text="Passe temps" />
-                           </children>
-                           <VBox.margin>
-                              <Insets top="16.0" />
-                           </VBox.margin>
-                        </HBox>
-                     </children>
-                  </VBox>
-               </children>
-               <padding>
-                  <Insets bottom="16.0" left="8.0" right="8.0" top="16.0" />
-               </padding>
+            <VBox prefHeight="244.0" prefWidth="640.0" VBox.vgrow="ALWAYS">
+               <styleClass>
+                  <String fx:value="main-box" />
+                  <String fx:value="main-container" />
+               </styleClass>
             </VBox>
          </children>
          <padding>
@@ -94,4 +46,8 @@
          </padding>
       </VBox>
    </children>
+   <stylesheets>
+      <URL value="@style/layout.css" />
+      <URL value="@style/components.css" />
+   </stylesheets>
 </StackPane>
