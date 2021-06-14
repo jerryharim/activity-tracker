@@ -10,3 +10,6 @@ core/build
 repository/.classpath
 repository/target/
 cli/build/
+.project
+Session.vim
+.classpath
