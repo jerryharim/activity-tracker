@@ -1,0 +1,8 @@
+mg/jerryharim/activitytracker/cli/repository/RepositoryActivite.class
+mg/jerryharim/activitytracker/cli/repository/dao/ActiviteDAO.class
+mg/jerryharim/activitytracker/cli/Main.class
+mg/jerryharim/activitytracker/cli/repository/dao/DAOFactory.class
+mg/jerryharim/activitytracker/cli/repository/FakeRegistreActivite.class
+mg/jerryharim/activitytracker/cli/repository/dao/DatabaseManager.class
+mg/jerryharim/activitytracker/cli/repository/dao/DAO.class
+mg/jerryharim/activitytracker/cli/CommandeAjoutActivite.class

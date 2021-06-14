@@ -7,7 +7,7 @@ subprojects {
     apply plugin: 'java'
     apply plugin: 'application'
 
-    sourceCompatibility = 8
+    sourceCompatibility = 9
     targetCompatibility = 8
 
     repositories {

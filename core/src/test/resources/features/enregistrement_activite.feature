@@ -14,6 +14,7 @@ Fonctionnalité: enregistrement d'une activité
             | date       | heure commencement | heure fin | nom activité                | mot cle |
             | 12-01-2021 | 06:30              | 10:30     | lue le livre cuisine facile | lecture |
 
+
     Scénario: enregistremnt detaillé d'une activité 
 
         Enregistrement d'une activité avec des details.
@@ -25,6 +26,7 @@ Fonctionnalité: enregistrement d'une activité
             | date       | heure commencement | heure fin | nom activité                | mot cle                 |
             | 12-01-2021 | 06:30              | 10:30     | lue le livre cuisine facile | lecture, non productive |
         Et qui devrait avoir comme detail : "J'aurais pu le finir en 30 minutes mais j'ai été distrait avec les bruits des voisins."
+
 
     Scénario: l'activité s'etant entre deux date
 

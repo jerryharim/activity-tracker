@@ -1,0 +1,226 @@
+2021-03-25 21:50:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE DATABASE[*] ACTIVITYTRACKER"; expected "OR, FORCE, VIEW, ALIAS, SEQUENCE, USER, TRIGGER, ROLE, SCHEMA, CONSTANT, DOMAIN, TYPE, DATATYPE, AGGREGATE, LINKED, MEMORY, CACHED, LOCAL, GLOBAL, TEMP, TEMPORARY, TABLE, SYNONYM, PRIMARY, UNIQUE, HASH, SPATIAL, INDEX"; SQL statement:
+create database activityTracker [42001-200]
+2021-03-25 21:50:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE DATABASE[*] ACTIVITYTRACKER"; expected "OR, FORCE, VIEW, ALIAS, SEQUENCE, USER, TRIGGER, ROLE, SCHEMA, CONSTANT, DOMAIN, TYPE, DATATYPE, AGGREGATE, LINKED, MEMORY, CACHED, LOCAL, GLOBAL, TEMP, TEMPORARY, TABLE, SYNONYM, PRIMARY, UNIQUE, HASH, SPATIAL, INDEX"; SQL statement:
+create database activityTracker [42001-200]
+2021-03-25 21:53:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE DATABASE[*] ACTIVITYTRACKER"; expected "OR, FORCE, VIEW, ALIAS, SEQUENCE, USER, TRIGGER, ROLE, SCHEMA, CONSTANT, DOMAIN, TYPE, DATATYPE, AGGREGATE, LINKED, MEMORY, CACHED, LOCAL, GLOBAL, TEMP, TEMPORARY, TABLE, SYNONYM, PRIMARY, UNIQUE, HASH, SPATIAL, INDEX"; SQL statement:
+create database activityTracker [42001-200]
+2021-03-25 21:53:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE DATABASE[*] ACTIVITYTRACKER"; expected "OR, FORCE, VIEW, ALIAS, SEQUENCE, USER, TRIGGER, ROLE, SCHEMA, CONSTANT, DOMAIN, TYPE, DATATYPE, AGGREGATE, LINKED, MEMORY, CACHED, LOCAL, GLOBAL, TEMP, TEMPORARY, TABLE, SYNONYM, PRIMARY, UNIQUE, HASH, SPATIAL, INDEX"; SQL statement:
+create database activityTracker [42001-200]
+2021-03-25 21:53:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE DATABASE[*] ACTIVITYTRACKER"; expected "OR, FORCE, VIEW, ALIAS, SEQUENCE, USER, TRIGGER, ROLE, SCHEMA, CONSTANT, DOMAIN, TYPE, DATATYPE, AGGREGATE, LINKED, MEMORY, CACHED, LOCAL, GLOBAL, TEMP, TEMPORARY, TABLE, SYNONYM, PRIMARY, UNIQUE, HASH, SPATIAL, INDEX"; SQL statement:
+create database activityTracker [42001-200]
+2021-03-25 21:53:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE DATABASE[*] ACTIVITYTRACKER"; expected "OR, FORCE, VIEW, ALIAS, SEQUENCE, USER, TRIGGER, ROLE, SCHEMA, CONSTANT, DOMAIN, TYPE, DATATYPE, AGGREGATE, LINKED, MEMORY, CACHED, LOCAL, GLOBAL, TEMP, TEMPORARY, TABLE, SYNONYM, PRIMARY, UNIQUE, HASH, SPATIAL, INDEX"; SQL statement:
+create database activitytracker [42001-200]
+2021-03-27 15:56:08 database: wrong user or password; user: "ROOT"
+org.h2.message.DbException: Wrong user name or password [28000-200]
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.engine.Engine.openSession(Engine.java:131)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at org.h2.util.JdbcUtils.getConnection(JdbcUtils.java:309)
+	at org.h2.util.JdbcUtils.getConnection(JdbcUtils.java:289)
+	at org.h2.server.web.WebServer.getConnection(WebServer.java:785)
+	at org.h2.server.web.WebApp.test(WebApp.java:947)
+	at org.h2.server.web.WebApp.process(WebApp.java:238)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:173)
+	at org.h2.server.web.WebThread.process(WebThread.java:139)
+	at org.h2.server.web.WebThread.run(WebThread.java:94)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Wrong user name or password [28000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:461)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 21 more
+2021-03-27 15:56:19 database: wrong user or password; user: "AS"
+org.h2.message.DbException: Wrong user name or password [28000-200]
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.engine.Engine.openSession(Engine.java:131)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at org.h2.util.JdbcUtils.getConnection(JdbcUtils.java:309)
+	at org.h2.util.JdbcUtils.getConnection(JdbcUtils.java:289)
+	at org.h2.server.web.WebServer.getConnection(WebServer.java:785)
+	at org.h2.server.web.WebApp.login(WebApp.java:1008)
+	at org.h2.server.web.WebApp.process(WebApp.java:223)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:173)
+	at org.h2.server.web.WebThread.process(WebThread.java:139)
+	at org.h2.server.web.WebThread.run(WebThread.java:94)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Wrong user name or password [28000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:461)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 21 more
+2021-03-27 15:59:06 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE MOTCLEACTIVITE(IDACTIVITE INT NOT NULL FOREIGN[*] KEY REFERENCES ACTIVITE(ID), IDMOTCLE INT NOT NULL FOREIGN KEY REFERENCES MOTCLE(ID))"; expected "AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, COMMENT, CHECK, REFERENCES, ,, )"; SQL statement:
+create table motCleActivite(idActivite int not null foreign key references activite(id), idMotCle int not null foreign key references motcle(id)) [42001-200]
+2021-03-27 15:59:44 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE MOTCLEACTIVITE(
+IDACTIVITE INT NOT NULL FOREIGNKEY[*] REFERENCES ACTIVITE(ID), 
+IDMOTCLE INT NOT NULL FOREIGNKEY REFERENCES MOTCLE(ID)
+)"; expected "AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, COMMENT, CHECK, REFERENCES, ,, )"; SQL statement:
+create table motCleActivite(
+idActivite int not null foreignkey references activite(id), 
+idMotCle int not null foreignkey references motcle(id)
+) [42001-200]
+2021-03-27 16:01:27 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE MOTCLEACTIVITE(
+IDACTIVITE INT NOT NULL, 
+IDMOTCLE INT NOT NULL,
+FOREIGN KEY(IDACTIVITE) REFERENCES ACTIVITE(ID),
+FOREIGN KEY(IDMOTCLE) REFERENCES MOTCLE(ID),
+)[*]"; expected "identifier"; SQL statement:
+create table motCleActivite(
+idActivite int not null, 
+idMotCle int not null,
+foreign key(idActivite) references activite(id),
+foreign key(idMotCle) references motcle(id),
+) [42001-200]
+2021-03-27 16:06:06 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE MOTCLEACTIVITE(
+IDACTIVITE INT NOT NULL FOREIGN[*] KEY REFERENCE ACTIVITE(ID), 
+IDMOTCLE INT NOT NULL FOREIGN KEY REFERENCE MOTCLE(ID)
+)"; expected "AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, COMMENT, CHECK, REFERENCES, ,, )"; SQL statement:
+create table motCleActivite(
+idActivite int not null foreign key reference activite(id), 
+idMotCle int not null foreign key reference motcle(id)
+) [42001-200]
+2021-03-27 16:10:36 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE MOTCLEACTIVITE(
+IDACTIVITE INT NOT NULL,
+IDMOTCLE INT NOT NULL,
+FOREIGN KEY IDACTIVITE[*] REFERENCES ACTIVITE(ID),
+FOREIGN KEY IDMOTCLE REFERENCES MOTCLE(ID),
+)"; expected "("; SQL statement:
+create table motCleActivite(
+idActivite int not null,
+idMotCle int not null,
+foreign key idActivite references activite(id),
+foreign key idMotCle references motCle(id),
+) [42001-200]
+2021-03-27 16:10:59 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE MOTCLEACTIVITE(
+IDACTIVITE INT NOT NULL,
+IDMOTCLE INT NOT NULL,
+FOREIGN KEY (IDACTIVITE) REFERENCES ACTIVITE(ID),
+FOREIGN KEY (IDMOTCLE) REFERENCES MOTCLE(ID),
+)[*]"; expected "identifier"; SQL statement:
+create table motCleActivite(
+idActivite int not null,
+idMotCle int not null,
+foreign key (idActivite) references activite(id),
+foreign key (idMotCle) references motCle(id),
+) [42001-200]
+2021-03-27 16:18:35 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Unknown data type: "DATEDEBUT"; SQL statement:
+alter table activite alter column dateactivite datedebut [50004-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.command.Parser.parseColumnWithType(Parser.java:5971)
+	at org.h2.command.Parser.parseColumnForTable(Parser.java:5697)
+	at org.h2.command.Parser.parseAlterTableAlterColumnType(Parser.java:8065)
+	at org.h2.command.Parser.parseAlterTableAlter(Parser.java:7811)
+	at org.h2.command.Parser.parseAlterTable(Parser.java:7698)
+	at org.h2.command.Parser.parseAlter(Parser.java:6983)
+	at org.h2.command.Parser.parsePrepared(Parser.java:887)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1459)
+	at org.h2.server.web.WebApp.query(WebApp.java:1116)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1078)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1065)
+	at org.h2.server.web.WebThread.process(WebThread.java:178)
+	at org.h2.server.web.WebThread.run(WebThread.java:94)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2021-03-27 16:18:49 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MOTCLEACTIVITE" already exists; SQL statement:
+create table motCleActivite(
+idActivite int not null,
+idMotCle int not null
+) [42101-200]
+2021-03-27 16:18:49 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "ALTER TABLE ACTIVITE ALTER COLUMN DATEACTIVITE RENAME DATEDEBUT[*]"; expected "TO"; SQL statement:
+alter table activite alter column dateactivite rename datedebut [42001-200]
+2021-03-27 16:19:11 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MOTCLEACTIVITE" already exists; SQL statement:
+create table motCleActivite(
+idActivite int not null,
+idMotCle int not null
+) [42101-200]
+2021-03-27 16:42:17 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DROP TABLE IF EXIST[*] ACTIVITE, MOTCLE"; expected "EXISTS"; SQL statement:
+drop table if exist activite, motcle [42001-200]
+2021-03-27 16:42:28 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DROP TABLE IF EXIST[*] ACTIVITE"; expected "EXISTS"; SQL statement:
+drop table if exist activite [42001-200]
+2021-03-27 16:42:38 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ACTIVITES" not found; SQL statement:
+drop table activites [42102-200]
+2021-03-27 16:42:59 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Cannot drop "ACTIVITE" because "CONSTRAINT_5, CONSTRAINT_507, CONSTRAINT_507B1" depends on it; SQL statement:
+drop table if exists activite, motcle [90107-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.command.ddl.DropTable.prepareDrop(DropTable.java:98)
+	at org.h2.command.ddl.DropTable.update(DropTable.java:124)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198)
+	at org.h2.command.Command.executeUpdate(Command.java:251)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:228)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1459)
+	at org.h2.server.web.WebApp.query(WebApp.java:1116)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1078)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1065)
+	at org.h2.server.web.WebThread.process(WebThread.java:178)
+	at org.h2.server.web.WebThread.run(WebThread.java:94)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2021-03-27 16:43:06 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DROP TABLE IF EXISTS ([*]ACTIVITE, MOTCLE)"; expected "identifier"; SQL statement:
+drop table if exists (activite, motcle) [42001-200]
+2021-03-27 16:43:16 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Cannot drop "ACTIVITE" because "CONSTRAINT_5, CONSTRAINT_507, CONSTRAINT_507B1" depends on it; SQL statement:
+drop table if exists activite [90107-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.command.ddl.DropTable.prepareDrop(DropTable.java:98)
+	at org.h2.command.ddl.DropTable.update(DropTable.java:124)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198)
+	at org.h2.command.Command.executeUpdate(Command.java:251)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:228)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1459)
+	at org.h2.server.web.WebApp.query(WebApp.java:1116)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1078)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1065)
+	at org.h2.server.web.WebThread.process(WebThread.java:178)
+	at org.h2.server.web.WebThread.run(WebThread.java:94)
+	at java.base/java.lang.Thread.run(Thread.java:832)

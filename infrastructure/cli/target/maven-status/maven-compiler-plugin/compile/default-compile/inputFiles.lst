@@ -1,0 +1,8 @@
+/home/jok3r/workspace/envMaven/projects/activity-tracker/activity-tracker-cli/src/main/java/mg/jerryharim/activitytracker/cli/CommandeAjoutActivite.java
+/home/jok3r/workspace/envMaven/projects/activity-tracker/activity-tracker-cli/src/main/java/mg/jerryharim/activitytracker/cli/repository/FakeRegistreActivite.java
+/home/jok3r/workspace/envMaven/projects/activity-tracker/activity-tracker-cli/src/main/java/mg/jerryharim/activitytracker/cli/repository/RepositoryActivite.java
+/home/jok3r/workspace/envMaven/projects/activity-tracker/activity-tracker-cli/src/main/java/mg/jerryharim/activitytracker/cli/Main.java
+/home/jok3r/workspace/envMaven/projects/activity-tracker/activity-tracker-cli/src/main/java/mg/jerryharim/activitytracker/cli/repository/dao/DAO.java
+/home/jok3r/workspace/envMaven/projects/activity-tracker/activity-tracker-cli/src/main/java/mg/jerryharim/activitytracker/cli/repository/dao/DAOFactory.java
+/home/jok3r/workspace/envMaven/projects/activity-tracker/activity-tracker-cli/src/main/java/mg/jerryharim/activitytracker/cli/repository/dao/DatabaseManager.java
+/home/jok3r/workspace/envMaven/projects/activity-tracker/activity-tracker-cli/src/main/java/mg/jerryharim/activitytracker/cli/repository/dao/ActiviteDAO.java

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="660.0" spacing="12.0" style="-fx-background-color: #161616;" xmlns="http://javafx.com/javafx/8.0.201" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefWidth="200.0" styleClass="window-header-container">
+         <children>
+            <HBox alignment="CENTER_LEFT">
+               <children>
+                  <Label minWidth="-Infinity" styleClass="logo-first-block" text="Activity" />
+                  <Label minWidth="-Infinity" styleClass="logo-last-block" text="Tracker" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefWidth="200.0" styleClass="window-header-right-container" HBox.hgrow="ALWAYS">
+               <children>
+                  <HBox styleClass="menu-container">
+                     <children>
+                        <Button minWidth="-Infinity" mnemonicParsing="false" onAction="#showActivities" prefHeight="26.0" prefWidth="71.0" styleClass="primary-button" text="Liste" />
+                        <Button mnemonicParsing="false" styleClass="transparent-button" text="+" />
+                     </children>
+                  </HBox>
+                  <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="15.0" prefWidth="15.0" styleClass="close-button" />
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <StackPane VBox.vgrow="ALWAYS">
+         <children>
+            <VBox fx:id="childrenContainer" prefHeight="244.0" prefWidth="640.0">
+               <styleClass>
+                  <String fx:value="main-box" />
+                  <String fx:value="main-container" />
+               </styleClass>
+            </VBox>
+         </children>
+      </StackPane>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+   <stylesheets>
+      <URL value="@style/components.css" />
+      <URL value="@style/layout.css" />
+   </stylesheets>
+</VBox>

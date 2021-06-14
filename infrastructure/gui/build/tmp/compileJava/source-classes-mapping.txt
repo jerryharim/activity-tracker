@@ -1,0 +1,42 @@
+mg/jerryharim/activitytracker/gui/data/SimpleActivityRepository.java
+ mg.jerryharim.activitytracker.gui.data.SimpleActivityRepository
+mg/jerryharim/activitytracker/gui/viewModel/ActivityItemViewModelImpl.java
+ mg.jerryharim.activitytracker.gui.viewModel.ActivityItemViewModelImpl
+mg/jerryharim/activitytracker/gui/viewModel/WindowViewModelImpl.java
+ mg.jerryharim.activitytracker.gui.viewModel.WindowViewModelImpl
+mg/jerryharim/activitytracker/gui/window/WindowController.java
+ mg.jerryharim.activitytracker.gui.window.WindowController
+mg/jerryharim/activitytracker/gui/window/WindowViewOld.java
+ mg.jerryharim.activitytracker.gui.window.WindowViewOld
+mg/jerryharim/activitytracker/gui/viewModel/ActivityRepository.java
+ mg.jerryharim.activitytracker.gui.viewModel.ActivityRepository
+mg/jerryharim/activitytracker/gui/entity/Activity.java
+ mg.jerryharim.activitytracker.gui.entity.Activity
+mg/jerryharim/activitytracker/gui/view/activityItem/ActivityItemViewModel.java
+ mg.jerryharim.activitytracker.gui.view.activityItem.ActivityItemViewModel
+mg/jerryharim/activitytracker/gui/View.java
+ mg.jerryharim.activitytracker.gui.View
+mg/jerryharim/activitytracker/gui/FXMLViewOld.java
+ mg.jerryharim.activitytracker.gui.FXMLViewOld
+mg/jerryharim/activitytracker/gui/ViewModel.java
+ mg.jerryharim.activitytracker.gui.ViewModel
+mg/jerryharim/activitytracker/gui/RepositoryFactory.java
+ mg.jerryharim.activitytracker.gui.RepositoryFactory
+mg/jerryharim/activitytracker/gui/ViewOld.java
+ mg.jerryharim.activitytracker.gui.ViewOld
+mg/jerryharim/activitytracker/gui/ViewFactory.java
+ mg.jerryharim.activitytracker.gui.ViewFactory
+mg/jerryharim/activitytracker/gui/window/WindowViewModel.java
+ mg.jerryharim.activitytracker.gui.window.WindowViewModel
+mg/jerryharim/activitytracker/gui/view/activityItem/ActivityItemView.java
+ mg.jerryharim.activitytracker.gui.view.activityItem.ActivityItemView
+mg/jerryharim/activitytracker/gui/Controller.java
+ mg.jerryharim.activitytracker.gui.Controller
+mg/jerryharim/activitytracker/gui/ViewBuilder.java
+ mg.jerryharim.activitytracker.gui.ViewBuilder
+mg/jerryharim/activitytracker/gui/ViewModelFactory.java
+ mg.jerryharim.activitytracker.gui.ViewModelFactory
+mg/jerryharim/activitytracker/gui/ActivityTracker.java
+ mg.jerryharim.activitytracker.gui.ActivityTracker
+mg/jerryharim/activitytracker/gui/window/WindowView.java
+ mg.jerryharim.activitytracker.gui.window.WindowView
