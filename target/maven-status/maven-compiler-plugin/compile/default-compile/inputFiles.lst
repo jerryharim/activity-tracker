@@ -1,8 +1,0 @@
-/home/jok3r/workspace/envMaven/projects/activity-tracker/activity-tracker-core/src/main/java/mg/jerryharim/activitytracker/core/utility/DateTimeUtility.java
-/home/jok3r/workspace/envMaven/projects/activity-tracker/activity-tracker-core/src/main/java/mg/jerryharim/activitytracker/core/annotation/Repository.java
-/home/jok3r/workspace/envMaven/projects/activity-tracker/activity-tracker-core/src/main/java/mg/jerryharim/activitytracker/core/annotation/UseCase.java
-/home/jok3r/workspace/envMaven/projects/activity-tracker/activity-tracker-core/src/main/java/mg/jerryharim/activitytracker/core/App.java
-/home/jok3r/workspace/envMaven/projects/activity-tracker/activity-tracker-core/src/main/java/mg/jerryharim/activitytracker/core/usecase/EnregistrementActivite.java
-/home/jok3r/workspace/envMaven/projects/activity-tracker/activity-tracker-core/src/main/java/mg/jerryharim/activitytracker/core/usecase/RegistreActivite.java
-/home/jok3r/workspace/envMaven/projects/activity-tracker/activity-tracker-core/src/main/java/mg/jerryharim/activitytracker/core/usecase/ListeActivite.java
-/home/jok3r/workspace/envMaven/projects/activity-tracker/activity-tracker-core/src/main/java/mg/jerryharim/activitytracker/core/entity/Activite.java
