@@ -9,12 +9,12 @@ public class NouvelleActiviteVM extends ViewModel {
 
 
     @Override
-    public void synchronizeStates() {
+    public void synchronize_states() {
 
     }
 
     @Override
-    public void initializeDefaultStates() {
+    public void initialize_default_states() {
 
     }
 

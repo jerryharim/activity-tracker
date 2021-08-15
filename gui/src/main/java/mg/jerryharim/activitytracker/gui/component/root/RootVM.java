@@ -12,17 +12,18 @@ import mg.jerryharim.activitytracker.gui.component.base.ViewModel;
 
 public class RootVM extends ViewModel {
     private final BooleanProperty pressed_close_button = new SimpleBooleanProperty();
+    private final BooleanProperty pressed_add_button = new SimpleBooleanProperty();
     private final ObjectProperty<Node> current_popup = new SimpleObjectProperty<>();
     private final ObservableList<Node> items = FXCollections.observableArrayList();
 
 
     @Override
-    public void synchronizeStates() {
+    public void synchronize_states() {
 
     }
 
 	@Override
-    public void initializeDefaultStates() {
+    public void initialize_default_states() {
 
     }
 
@@ -37,7 +38,12 @@ public class RootVM extends ViewModel {
         return pressed_close_button;
     }
 
+    public BooleanProperty pressed_add_button() {
+        return pressed_add_button;
+    }
+
     public ObjectProperty<Node> current_popup() {
         return current_popup;
     }
+
 }

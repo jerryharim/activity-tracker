@@ -15,7 +15,7 @@ public interface Synchronizable {
      * This function must be called before running default
      * action.
      */
-    void synchronizeStates();
+    void synchronize_states();
 
-    void initializeDefaultStates();
+    void initialize_default_states();
 }

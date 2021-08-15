@@ -26,10 +26,10 @@
                         <HBox styleClass="menu-container">
                            <children>
                               <Button minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="71.0" styleClass="primary-button" text="Liste" />
-                              <Button mnemonicParsing="false" styleClass="transparent-button" text="+" />
+                              <Button fx:id="button_add" mnemonicParsing="false" styleClass="transparent-button" text="+" />
                            </children>
                         </HBox>
-                        <Button fx:id="closeWindowButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="15.0" prefWidth="15.0" styleClass="close-button" />
+                        <Button fx:id="close_window_button" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="15.0" prefWidth="15.0" styleClass="close-button" />
                      </children>
                   </HBox>
                </children>

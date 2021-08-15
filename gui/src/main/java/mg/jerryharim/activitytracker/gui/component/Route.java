@@ -40,13 +40,28 @@ public class Route extends HashMap<ComponentName, Component> {
         return this.componentFactory.create_activite_component();
     }
 
+    public Component get(ComponentName componentName) {
+        Component component = super.get(componentName);
 
+        if (component == null) throw new IllegalStateException(
+                String.format("Route '%s' not found in : %s", componentName, values()));
+
+        return component;
+    }
+
+
+    /**
+     * Load components, synchronize states and initialize default states
+     */
     public void load_all_components() {
         values().forEach(component -> {
             component.load();
+
+            System.out.println("sync with vm " + component);
             component.getView().sync_with_view_model();
-            ((ViewModel) component.getView().getViewModel()).synchronizeStates();
-            ((ViewModel) component.getView().getViewModel()).initializeDefaultStates();
+
+            ((ViewModel) component.getView().getViewModel()).synchronize_states();
+            ((ViewModel) component.getView().getViewModel()).initialize_default_states();
 
 //            if (component.getView() instanceof ParentController) {
 //                ((ParentController) component.getController()).syncCurrentChildren();
