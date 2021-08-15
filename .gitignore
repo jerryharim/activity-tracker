@@ -24,3 +24,4 @@ repository/.classpath
 repository/.project
 repository/.settings
 repository/bin
+.gradle

@@ -19,7 +19,6 @@ public class ActivityTracker extends Application {
 
         ComponentManager componentManager = new ComponentManager();
         componentManager.initialize_components();
-        componentManager.initialize_defaults();
 
         Parent root = (Parent) componentManager.getRoot_component();
 

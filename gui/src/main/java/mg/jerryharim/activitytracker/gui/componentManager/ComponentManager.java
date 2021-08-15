@@ -5,38 +5,43 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import mg.jerryharim.activitytracker.gui.component.Route;
+import mg.jerryharim.activitytracker.gui.component.activiteComponent.ActiviteComponent;
 import mg.jerryharim.activitytracker.gui.component.root.RootComponent;
 
 /**
  * Manage all component.
  */
 public class ComponentManager {
-    ComponentFactory componentFactory = new ComponentFactory();
+    Route route = new Route();
 
 
     /**
-     * Initialize route, load components and initialize
+     * Initialize route, load components, initialize
      * synchronisation with their view model
+     * and initialize defaults states
      */
     public void initialize_components() {
-        componentFactory.initialize_route();
-        componentFactory.build_all();
-        componentFactory.initialize_view_model_synchronisations();
+        this.route.initialize();
+        this.route.load_all_components();
+
+        initialize_view_model_synchronisations();
+        initialize_defaults();
     }
 
-    /**
-     * Initialize components default states
-     */
+    public void initialize_view_model_synchronisations() {
+        this.route.values().forEach(component -> {
+            component.getView().sync_with_view_model();
+        });
+    }
+
     public void initialize_defaults() {
-        Route route = this.componentFactory.getRoute();
-
-        RootComponent rootComponent = (RootComponent) route.get(ComponentName.ROOT);
-        Parent root = (Parent) rootComponent.getNode();
-
-        rootComponent.getViewModel().items().add(new Button("bonjour tous le modne"));
+        RootComponent rootComponent = (RootComponent) this.route.get(ComponentName.ROOT);
+        ActiviteComponent activiteComponent = this.route.create_activite_component();
+        activiteComponent.load();
+        rootComponent.getViewModel().items().add(activiteComponent.getNode());
     }
 
     public Node getRoot_component() {
-        return this.componentFactory.getRoute().get(ComponentName.ROOT).getNode();
+        return this.route.get(ComponentName.ROOT).getNode();
     }
 }
