@@ -9,9 +9,9 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 
-<StackPane xmlns="http://javafx.com/javafx/8.0.201" xmlns:fx="http://javafx.com/fxml/1">
+<StackPane fx:id="root" xmlns="http://javafx.com/javafx/8.0.201" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="660.0" spacing="12.0" style="-fx-background-color: #161616;">
+      <VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="660.0" spacing="12.0" style="-fx-background-color: #161616;">
          <children>
             <HBox alignment="CENTER_LEFT" prefWidth="200.0" styleClass="window-header-container">
                <children>
@@ -29,12 +29,12 @@
                               <Button mnemonicParsing="false" styleClass="transparent-button" text="+" />
                            </children>
                         </HBox>
-                        <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="15.0" prefWidth="15.0" styleClass="close-button" />
+                        <Button fx:id="closeWindowButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="15.0" prefWidth="15.0" styleClass="close-button" />
                      </children>
                   </HBox>
                </children>
             </HBox>
-            <VBox prefHeight="244.0" prefWidth="640.0" VBox.vgrow="ALWAYS">
+            <VBox fx:id="items_container" prefHeight="244.0" prefWidth="640.0" VBox.vgrow="ALWAYS">
                <styleClass>
                   <String fx:value="main-box" />
                   <String fx:value="main-container" />

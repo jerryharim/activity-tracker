@@ -13,6 +13,11 @@
     -fx-font-weight: bold;
 }
 
+.emphase-dark {
+    -fx-text-fill: #343434;
+    -fx-font-weight: bold;
+}
+
 /* logo */
 .logo-first-block {
     -fx-text-fill: #f5f5f5;
@@ -24,10 +29,15 @@
 }
 
 /* Button */
+
 .primary-button {
     -fx-background-color:  linear-gradient(#0c8e72, #0b8652);
     -fx-text-fill:  #f5f5f5;
     -fx-background-radius: 5px;
+}
+
+.button-secondary {
+    -fx-background-color: #dfdfdf;
 }
 
 .transparent-button {
@@ -63,3 +73,41 @@
     -fx-background-radius: 10px;
 }
 
+/* POPUP */
+
+/* label */
+.popup .label {
+    -fx-text-fill: #161616;
+}
+
+/* textfield */
+
+.popup .text-field {
+    -fx-background-color: #c5c5c5;
+    -fx-border-color: #e5e5e5;
+}
+
+.popup .emphase {
+    -fx-text-fill: #252525;
+    -fx-font-weight: bold;
+}
+
+/* date picker */
+
+.popup .date-picker .stack-pane,
+.popup .date-picker .arrow-button
+{
+    -fx-background-color: transparent;
+}
+
+.popup .date-picker {
+    -fx-background-insets: 0;
+    -fx-background-color: #e5e5e5;
+}
+
+.popup .tag {
+    -fx-background-color: #c6c6c6;
+    -fx-background-radius: 20px;
+    -fx-padding: 2px 4px 2px 4px;
+    -fx-font-size: 11px;
+}

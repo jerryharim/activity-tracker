@@ -17,7 +17,7 @@ Bien sûr on peut prévoir de faire certaines taches et d'estimer à la fin si n
 les avons réalisé ou non mais ceci n'est pas suffisant.Même si nous avons prévu de 
 faire ces taches, nous pouvons être facilement distraite par de multiples choses. 
 
-Par exemple en voulant faire une pause de 15 minutes en regardant un épisode de 
+Par exemple en voulant faire une pause de 15 minutes en regardant un épisode de 
 votre série préférer, et une chose entrainant une autre, de fil en aiguille nous 
 faisons de truc qu'on n'a pas envisagé de faire.
 

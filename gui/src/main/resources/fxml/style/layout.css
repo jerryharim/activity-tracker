@@ -25,3 +25,16 @@
 .tag-spacing {
     -fx-spacing: 8;
 }
+
+
+.main-container-padding {
+    -fx-padding: 20px;
+}
+
+
+/* spacing */
+.spacing-5  { -fx-spacing: 5px; }
+.spacing-10 { -fx-spacing: 10px; }
+.spacing-15 { -fx-spacing: 15px; }
+.spacing-20 { -fx-spacing: 20px; }
+.spacing-40 { -fx-spacing: 40px; }

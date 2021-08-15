@@ -1,20 +1,16 @@
 plugins {
-  id 'java'
-  id 'application'
-//  id 'org.openjfx.javafxplugin' version '0.0.10'
+  id 'org.openjfx.javafxplugin' version '0.0.10'
 }
 
-/*
 javafx {
-    version = "15.0.1"
-    modules = [ 'javafx.controls' ]
+  version = "16-ea+1"
+  modules = [ 'javafx.controls', 'javafx.fxml', 'javafx.base' ]
 }
 
 jar {
     manifest {
-        attributes 'Main-Class':'mg.jeryharim.activitytracker.gui.ActivityTracker'
+        attributes 'Main-Class':'mg.jerryharim.activitytracker.gui.ActivityTracker'
     }
 }
 
-mainClassName="mg.jeryharim.activitytracker.gui.ActivityTracker"
-*/
+mainClassName="mg.jerryharim.activitytracker.gui.ActivityTracker"

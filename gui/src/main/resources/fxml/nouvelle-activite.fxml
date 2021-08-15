@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8.0.201" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label styleClass="emphase-dark" text="Ajout de nouvelle activite" />
+      <VBox styleClass="spacing-10">
+         <children>
+            <VBox styleClass="spacing-5">
+               <children>
+                  <Label text="Nom :" />
+                  <TextField promptText="Nom de l'activité" />
+               </children>
+            </VBox>
+            <HBox styleClass="spacing-20">
+               <children>
+                  <VBox styleClass="spacing-5">
+                     <children>
+                        <Label text="Debut :" />
+                        <HBox styleClass="spacing-10">
+                           <children>
+                              <DatePicker prefHeight="26.0" prefWidth="100.0" promptText="Date" />
+                              <TextField prefHeight="26.0" prefWidth="71.0" promptText="Heure" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox styleClass="spacing-5">
+                     <children>
+                        <Label text="Fin :" />
+                        <HBox styleClass="spacing-10">
+                           <children>
+                              <DatePicker prefHeight="26.0" prefWidth="100.0" promptText="Date" />
+                              <TextField prefHeight="26.0" prefWidth="71.0" promptText="Heure" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <VBox layoutX="10.0" layoutY="10.0" styleClass="spacing-5">
+               <children>
+                  <Label text="Mots cles :" />
+                  <HBox spacing="10.0">
+                     <children>
+                        <TextField promptText="Taper un mot clé" HBox.hgrow="ALWAYS" />
+                        <Button mnemonicParsing="false" styleClass="button-secondary" text="Ajouter" />
+                     </children>
+                  </HBox>
+                  <HBox spacing="10.0">
+                     <children>
+                        <Label styleClass="tag" text="Productif" />
+                        <Label layoutX="10.0" layoutY="10.0" styleClass="tag" text="Lecture" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER_RIGHT" styleClass="spacing-10">
+         <children>
+            <Button fx:id="button_annuler" mnemonicParsing="false" styleClass="button-secondary" text="Annuler" />
+            <Button mnemonicParsing="false" styleClass="button-secondary" text="Detailler" />
+            <Button mnemonicParsing="false" styleClass="primary-button" text="Ajouter" />
+         </children>
+      </HBox>
+   </children>
+   <stylesheets>
+      <URL value="@style/components.css" />
+      <URL value="@style/layout.css" />
+      <URL value="@style/colors.css" />
+   </stylesheets>
+   <styleClass>
+      <String fx:value="main-container-padding" />
+      <String fx:value="spacing-20" />
+      <String fx:value="background-popup" />
+      <String fx:value="popup" />
+   </styleClass>
+</VBox>
