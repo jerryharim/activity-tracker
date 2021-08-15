@@ -1,6 +1,6 @@
 package mg.jerryharim.activitytracker.gui.eventManager;
 
-import mg.jerryharim.activitytracker.gui.component.root.RootComponent;
+import javafx.application.Platform;
 import mg.jerryharim.activitytracker.gui.component.root.RootVM;
 import mg.jerryharim.activitytracker.gui.componentManager.ComponentOrchestrator;
 
@@ -19,14 +19,23 @@ public class RootComponentEventManager {
 
 
     public void listen_all() {
-        listen_add_button();
+        listen_add_button_pressed_state();
+        listen_close_button_pressed_state();
     }
 
-    private void listen_add_button() {
+    private void listen_add_button_pressed_state() {
         this.rootComponentVM.pressed_add_button().addListener((obs, old, pressed) -> {
             System.out.println("add button pressed");
             this.componentOrchestrator.show_add_new_activity_component();
         });
     }
+
+    private void listen_close_button_pressed_state() {
+        this.rootComponentVM.pressed_close_button().addListener((obs, old, pressed) -> {
+            System.out.println("close button pressed");
+            Platform.exit();
+        });
+    }
+
 
 }
