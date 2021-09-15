@@ -27,6 +27,14 @@ public class RootVM extends ViewModel {
 
     }
 
+    public void show_popup(Node node) {
+        this.current_popup.set(node);
+    }
+
+    public void close_popup() {
+        this.current_popup.set(null);
+    }
+
 
     // getters
 

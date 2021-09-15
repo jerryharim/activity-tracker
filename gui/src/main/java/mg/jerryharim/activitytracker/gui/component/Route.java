@@ -57,11 +57,18 @@ public class Route extends HashMap<ComponentName, Component> {
         values().forEach(component -> {
             component.load();
 
-            System.out.println("sync with vm " + component);
+            System.out.println("Load a component : ");
+
+            System.out.println(" a. sync with vm " + component);
             component.getView().sync_with_view_model();
 
+            System.out.println(" b. sync states in VM" + component);
             ((ViewModel) component.getView().getViewModel()).synchronize_states();
+
+            System.out.println(" c. initialize defaults states in VM" + component);
             ((ViewModel) component.getView().getViewModel()).initialize_default_states();
+
+            System.out.println("---------------------");
 
 //            if (component.getView() instanceof ParentController) {
 //                ((ParentController) component.getController()).syncCurrentChildren();

@@ -27,11 +27,16 @@ public class ComponentOrchestrator {
 
 
     public void show_add_new_activity_component() {
-        getRootVM().current_popup().set(
+        getRootVM().show_popup(
                 this.route.get(ComponentName.NOUVELLE_ACTIVITE).getNode());
     }
 
     private RootVM getRootVM() {
         return (RootVM) this.route.get(ComponentName.ROOT).getViewModel();
     }
+
+    public void hide_nouvelle_activite() {
+        getRootVM().close_popup();
+    }
+
 }

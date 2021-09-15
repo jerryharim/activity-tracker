@@ -27,14 +27,19 @@ public class ComponentManager {
      * and initialize defaults states
      */
     public void initialize_components() {
+        System.out.println("[1]. Initialize components...");
+
         this.route.initialize();
         this.route.load_all_components();
+
+        System.out.printf("done%n[2]. Initializing events...%n");
         this.component_event_manager.initialize();
 
         initialize_defaults();
     }
 
     public void initialize_defaults() {
+        System.out.println("8. Show default activites ...");
         this.component_orchestrator.show_activities();
     }
 

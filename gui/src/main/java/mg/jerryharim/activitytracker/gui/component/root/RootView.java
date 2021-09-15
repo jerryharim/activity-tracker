@@ -30,13 +30,21 @@ public class RootView extends View<RootVM> {
     }
 
     private void sync_button_add_pressed_state() {
-        System.out.println("Sync add button pressed state");
+        System.out.println("[INFO] Sync add button pressed state");
         this.viewModel.pressed_add_button().bind(
                 this.button_add.pressedProperty());
+
+        this.button_add.pressedProperty().addListener((obs, old, pressed) -> {
+            System.out.println("[INFO] Action : button add pressed from View, state : " + pressed);
+        });
+
+        this.viewModel.pressed_add_button().addListener((obs, old, pressed) -> {
+            System.out.println("[INFO] Action : button add pressed from ViewModel, state : " + pressed);
+        });
     }
 
 	private void sync_close_window_pressed_state() {
-        System.out.println("Sync close button pressed state");
+        System.out.println("[INFO] Sync close button pressed state");
         this.viewModel.pressed_close_button().bind(
             this.close_window_button.pressedProperty());
     }
